@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Schoo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Principal", "SchoolManagementNTAPI.Principal\SchoolManagementNTAPI.Principal.csproj", "{05E32C02-F657-493A-A44A-CA1491FBD9A0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Professor", "SchoolManagementNTAPI.Professor\SchoolManagementNTAPI.Professor.csproj", "{90665BCF-EB03-40DD-B46C-13499F721997}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{05E32C02-F657-493A-A44A-CA1491FBD9A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05E32C02-F657-493A-A44A-CA1491FBD9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05E32C02-F657-493A-A44A-CA1491FBD9A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90665BCF-EB03-40DD-B46C-13499F721997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90665BCF-EB03-40DD-B46C-13499F721997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90665BCF-EB03-40DD-B46C-13499F721997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90665BCF-EB03-40DD-B46C-13499F721997}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
