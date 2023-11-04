@@ -4,6 +4,8 @@ using SchoolManagementNTAPI.Professor.Interfaces;
 using SchoolManagementNTAPI.Professor.Services;
 using SchoolManagementNTAPI.School.Interfaces;
 using SchoolManagementNTAPI.School.Services;
+using SchoolManagementNTAPI.Student.Interfaces;
+using SchoolManagementNTAPI.Student.Services;
 using SchoolManagementNTAPI.Subject.Interfaces;
 using SchoolManagementNTAPI.Subject.Services;
 
@@ -20,6 +22,8 @@ namespace SchoolManagementNTAPI.AppStartup
             services.AddScoped<IProfessorService, ProfessorService>();
 
             services.AddScoped<ISubjectService, SubjectService>();
+
+            services.AddScoped<IStudentService, StudentService>();
 
             return services;
         }
