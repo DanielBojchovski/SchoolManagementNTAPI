@@ -27,6 +27,7 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Data\SchoolManagementNTAPI.Data.csproj" />
+	  <ProjectReference Include="..\SchoolManagementNTAPI.Principal\SchoolManagementNTAPI.Principal.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.School\SchoolManagementNTAPI.School.csproj" />
 	</ItemGroup>
 
