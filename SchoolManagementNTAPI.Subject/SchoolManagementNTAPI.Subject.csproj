@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolManagementNTAPI.Common\SchoolManagementNTAPI.Common.csproj" />
+    <ProjectReference Include="..\SchoolManagementNTAPI.Data\SchoolManagementNTAPI.Data.csproj" />
+  </ItemGroup>
+
 </Project>
