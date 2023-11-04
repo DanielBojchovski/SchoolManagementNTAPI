@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using SchoolManagementNTAPI.AppStartup;
 using SchoolManagementNTAPI.Data.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -19,6 +20,8 @@ builder.Services.AddDbContext<SchoolManagementNTDBContext>(
 
 builder.Services.AddMvc(option => option.EnableEndpointRouting = false)
     .AddNewtonsoftJson(opt => opt.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);  //enables load related data
+
+builder.Services.AddDependencyInjectionServices();
 
 var app = builder.Build();
 
