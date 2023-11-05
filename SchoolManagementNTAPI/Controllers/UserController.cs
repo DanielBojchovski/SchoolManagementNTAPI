@@ -2,12 +2,14 @@
 using SchoolManagementNTAPI.AppUser.Interfaces;
 using SchoolManagementNTAPI.AppUser.Requests;
 using SchoolManagementNTAPI.AppUser.Responses;
+using SchoolManagementNTAPI.Authentication.Claims;
 using SchoolManagementNTAPI.Common.Responses;
 
 namespace SchoolManagementNTAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [HasClaim(UserClaims.Admin)]
     public class UserController : ControllerBase
     {
         private readonly IUserService _userService;

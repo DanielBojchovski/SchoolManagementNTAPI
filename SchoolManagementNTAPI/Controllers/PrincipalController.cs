@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SchoolManagementNTAPI.Authentication.Claims;
 using SchoolManagementNTAPI.Common.Requests;
 using SchoolManagementNTAPI.Common.Responses;
 using SchoolManagementNTAPI.Principal.Interfaces;
@@ -10,6 +11,7 @@ namespace SchoolManagementNTAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [HasClaim(UserClaims.User)]
     public class PrincipalController : ControllerBase
     {
         private readonly IPrincipalService _service;

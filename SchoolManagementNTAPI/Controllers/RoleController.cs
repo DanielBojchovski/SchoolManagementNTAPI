@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using SchoolManagementNTAPI.Authentication.Claims;
 using SchoolManagementNTAPI.Common.Responses;
 using SchoolManagementNTAPI.Role.Interfaces;
 using SchoolManagementNTAPI.Role.Requests;
@@ -8,6 +9,7 @@ namespace SchoolManagementNTAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [HasClaim(UserClaims.Admin)]
     public class RoleController : ControllerBase
     {
         private readonly IRolesService _roleService;

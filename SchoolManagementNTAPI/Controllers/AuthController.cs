@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
+using SchoolManagementNTAPI.Authentication.Claims;
 using SchoolManagementNTAPI.Authentication.Cookies;
 using SchoolManagementNTAPI.Authentication.Interfaces;
 using SchoolManagementNTAPI.Authentication.Requests;
@@ -11,6 +12,7 @@ namespace SchoolManagementNTAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [HasClaim(UserClaims.User)]
     public class AuthController : ControllerBase
     {
         private readonly IAuthService _authService;
