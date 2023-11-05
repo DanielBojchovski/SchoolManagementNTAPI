@@ -9,15 +9,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.Data"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.Common", "SchoolManagementNTAPI.Common\SchoolManagementNTAPI.Common.csproj", "{5DCBBCC8-506C-4278-8D81-08719924E81B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.School", "SchoolManagementNTAPI.School\SchoolManagementNTAPI.School.csproj", "{A70159D1-86CA-4007-9BA7-F3DCC564AFFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.School", "SchoolManagementNTAPI.School\SchoolManagementNTAPI.School.csproj", "{A70159D1-86CA-4007-9BA7-F3DCC564AFFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Principal", "SchoolManagementNTAPI.Principal\SchoolManagementNTAPI.Principal.csproj", "{05E32C02-F657-493A-A44A-CA1491FBD9A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.Principal", "SchoolManagementNTAPI.Principal\SchoolManagementNTAPI.Principal.csproj", "{05E32C02-F657-493A-A44A-CA1491FBD9A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Professor", "SchoolManagementNTAPI.Professor\SchoolManagementNTAPI.Professor.csproj", "{90665BCF-EB03-40DD-B46C-13499F721997}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.Professor", "SchoolManagementNTAPI.Professor\SchoolManagementNTAPI.Professor.csproj", "{90665BCF-EB03-40DD-B46C-13499F721997}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Subject", "SchoolManagementNTAPI.Subject\SchoolManagementNTAPI.Subject.csproj", "{93451ACE-CA26-4872-B4D3-CE1EAFAB20A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.Subject", "SchoolManagementNTAPI.Subject\SchoolManagementNTAPI.Subject.csproj", "{93451ACE-CA26-4872-B4D3-CE1EAFAB20A4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Student", "SchoolManagementNTAPI.Student\SchoolManagementNTAPI.Student.csproj", "{CF32411B-C372-4FE0-AB1C-94086A60B113}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.Student", "SchoolManagementNTAPI.Student\SchoolManagementNTAPI.Student.csproj", "{CF32411B-C372-4FE0-AB1C-94086A60B113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Authentication", "SchoolManagementNTAPI.Authentication\SchoolManagementNTAPI.Authentication.csproj", "{AAB98C0A-C56D-499A-9EC2-3CB4D6D28530}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{CF32411B-C372-4FE0-AB1C-94086A60B113}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF32411B-C372-4FE0-AB1C-94086A60B113}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF32411B-C372-4FE0-AB1C-94086A60B113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAB98C0A-C56D-499A-9EC2-3CB4D6D28530}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAB98C0A-C56D-499A-9EC2-3CB4D6D28530}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAB98C0A-C56D-499A-9EC2-3CB4D6D28530}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAB98C0A-C56D-499A-9EC2-3CB4D6D28530}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
