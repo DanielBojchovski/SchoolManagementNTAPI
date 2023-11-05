@@ -10,6 +10,7 @@ using SchoolManagementNTAPI.Authentication.Claims;
 using SchoolManagementNTAPI.Authentication.Cookies;
 using SchoolManagementNTAPI.Authentication.JWT.Options;
 using SchoolManagementNTAPI.Data.Entities;
+using SchoolManagementNTAPI.Notification.Options;
 using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -85,6 +86,7 @@ builder.Services.AddCors(options =>
 builder.Services.ConfigureOptions<JwtOptionsSetup>();
 builder.Services.ConfigureOptions<JwtBearerOptionsSetup>();
 builder.Services.ConfigureOptions<CookieOptionsSetup>();
+builder.Services.ConfigureOptions<MailOptionsSetup>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 

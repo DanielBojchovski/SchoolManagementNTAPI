@@ -3,6 +3,8 @@ using SchoolManagementNTAPI.AppUser.Services;
 using SchoolManagementNTAPI.Authentication.Interfaces;
 using SchoolManagementNTAPI.Authentication.JWT;
 using SchoolManagementNTAPI.Authentication.Services;
+using SchoolManagementNTAPI.Notification.Interfaces;
+using SchoolManagementNTAPI.Notification.Services;
 using SchoolManagementNTAPI.Principal.Interfaces;
 using SchoolManagementNTAPI.Principal.Services;
 using SchoolManagementNTAPI.Professor.Interfaces;
@@ -41,6 +43,8 @@ namespace SchoolManagementNTAPI.AppStartup
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IRefreshTokenService, RefreshTokenService>();
             services.AddScoped<IJwtProvider, JwtProvider>();
+
+            services.AddScoped<IEmailService, EmailService>();
 
             return services;
         }

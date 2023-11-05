@@ -29,6 +29,7 @@
 	  <ProjectReference Include="..\SchoolManagementNTAPI.AppUser\SchoolManagementNTAPI.AppUser.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Authentication\SchoolManagementNTAPI.Authentication.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Data\SchoolManagementNTAPI.Data.csproj" />
+	  <ProjectReference Include="..\SchoolManagementNTAPI.Notification\SchoolManagementNTAPI.Notification.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Principal\SchoolManagementNTAPI.Principal.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Professor\SchoolManagementNTAPI.Professor.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Role\SchoolManagementNTAPI.Role.csproj" />
