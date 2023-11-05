@@ -1,5 +1,8 @@
 ﻿using SchoolManagementNTAPI.AppUser.Interfaces;
 using SchoolManagementNTAPI.AppUser.Services;
+using SchoolManagementNTAPI.Authentication.Interfaces;
+using SchoolManagementNTAPI.Authentication.JWT;
+using SchoolManagementNTAPI.Authentication.Services;
 using SchoolManagementNTAPI.Principal.Interfaces;
 using SchoolManagementNTAPI.Principal.Services;
 using SchoolManagementNTAPI.Professor.Interfaces;
@@ -33,6 +36,11 @@ namespace SchoolManagementNTAPI.AppStartup
             services.AddScoped<IRolesService, RolesService>();
 
             services.AddScoped<IUserService, UserService>();
+
+            //auth
+            services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IRefreshTokenService, RefreshTokenService>();
+            services.AddScoped<IJwtProvider, JwtProvider>();
 
             return services;
         }
