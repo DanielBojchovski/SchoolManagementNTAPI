@@ -1,9 +1,12 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using SchoolManagementNTAPI.AppStartup;
 using SchoolManagementNTAPI.AppUser.IdentityErrorMessages;
+using SchoolManagementNTAPI.Authentication.Claims;
 using SchoolManagementNTAPI.Authentication.Cookies;
 using SchoolManagementNTAPI.Authentication.JWT.Options;
 using SchoolManagementNTAPI.Data.Entities;
@@ -81,6 +84,19 @@ builder.Services.AddCors(options =>
 builder.Services.ConfigureOptions<JwtOptionsSetup>();
 builder.Services.ConfigureOptions<JwtBearerOptionsSetup>();
 builder.Services.ConfigureOptions<CookieOptionsSetup>();
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
+
+builder.Services.AddAuthorization(options =>
+{
+    options.FallbackPolicy = new AuthorizationPolicyBuilder()
+        .RequireAuthenticatedUser()
+        .RequireClaim("claims", UserClaims.Student.ToString())
+        .Build();
+});
+
+builder.Services.AddTransient<IAuthorizationHandler, ClaimAuthorizationHandler>();
+builder.Services.AddSingleton<IAuthorizationPolicyProvider, ClaimAuthorizationPolicyProvider>();
 
 var app = builder.Build();
 
