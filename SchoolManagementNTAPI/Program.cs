@@ -38,6 +38,8 @@ builder.Services.AddMvc(option => option.EnableEndpointRouting = false)
 
 builder.Services.AddDependencyInjectionServices();
 
+builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
