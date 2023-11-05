@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
 using SchoolManagementNTAPI.AppStartup;
+using SchoolManagementNTAPI.AppUser.IdentityErrorMessages;
 using SchoolManagementNTAPI.Data.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -29,6 +30,7 @@ builder.Services
     .AddSignInManager()
     .AddUserManager<AspNetUserManager<IdentityUser>>()
     .AddRoleManager<AspNetRoleManager<IdentityRole>>()
+    .AddErrorDescriber<LocalizedIdentityErrorDescriber>()
     .AddEntityFrameworkStores<SchoolManagementNTDBContext>();
 
 builder.Services.AddMvc(option => option.EnableEndpointRouting = false)
