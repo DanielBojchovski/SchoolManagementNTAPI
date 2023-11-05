@@ -18,6 +18,8 @@ public partial class SchoolManagementNTDBContext : IdentityDbContext
 
     public virtual DbSet<Professor> Professor { get; set; }
 
+    public virtual DbSet<RefreshToken> RefreshToken { get; set; }
+
     public virtual DbSet<School> School { get; set; }
 
     public virtual DbSet<Student> Student { get; set; }
@@ -54,6 +56,16 @@ public partial class SchoolManagementNTDBContext : IdentityDbContext
                 .HasConstraintName("FK_Professor_School");
         });
 
+        modelBuilder.Entity<RefreshToken>(entity =>
+        {
+            entity.Property(e => e.AspNetUserId)
+                .IsRequired()
+                .HasMaxLength(450);
+            entity.Property(e => e.TokenHash)
+                .IsRequired()
+                .HasMaxLength(250);
+        });
+
         modelBuilder.Entity<School>(entity =>
         {
             entity.Property(e => e.Name)
@@ -63,6 +75,7 @@ public partial class SchoolManagementNTDBContext : IdentityDbContext
 
         modelBuilder.Entity<Student>(entity =>
         {
+            entity.Property(e => e.AspNetUserId).HasMaxLength(450);
             entity.Property(e => e.Name)
                 .IsRequired()
                 .HasMaxLength(50);

@@ -24,6 +24,10 @@
          "ObjectType": 0
       },
       {
+         "Name": "[dbo].[RefreshToken]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[School]",
          "ObjectType": 0
       },
