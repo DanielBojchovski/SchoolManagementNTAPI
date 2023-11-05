@@ -69,6 +69,15 @@ builder.Services.AddDependencyInjectionServices();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy(name: "DanielDevCors",
+        policy =>
+        {
+            policy.WithOrigins("http://localhost:4200").AllowAnyHeader().AllowCredentials().AllowAnyMethod();
+        });
+});
+
 builder.Services.ConfigureOptions<JwtOptionsSetup>();
 builder.Services.ConfigureOptions<JwtBearerOptionsSetup>();
 builder.Services.ConfigureOptions<CookieOptionsSetup>();
@@ -81,6 +90,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("DanielDevCors");
 
 app.UseHttpsRedirection();
 
