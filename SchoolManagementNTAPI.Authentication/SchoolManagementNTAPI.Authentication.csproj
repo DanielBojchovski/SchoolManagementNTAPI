@@ -6,4 +6,13 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\SchoolManagementNTAPI.Common\SchoolManagementNTAPI.Common.csproj" />
+	  <ProjectReference Include="..\SchoolManagementNTAPI.Data\SchoolManagementNTAPI.Data.csproj" />
+	</ItemGroup>
+
 </Project>
