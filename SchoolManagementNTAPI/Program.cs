@@ -92,7 +92,7 @@ builder.Services.AddAuthorization(options =>
 {
     options.FallbackPolicy = new AuthorizationPolicyBuilder()
         .RequireAuthenticatedUser()
-        .RequireClaim("claims", UserClaims.Student.ToString())
+        .RequireClaim("claims", UserClaims.User.ToString())
         .Build();
 });
 

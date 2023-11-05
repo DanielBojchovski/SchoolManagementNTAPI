@@ -6,9 +6,8 @@
     }
     public enum UserClaims
     {
-        Admin = 1,
-        Principal,
-        Professor,
-        Student
+        User = 1,
+        Admin,
+        Developer
     }
 }
