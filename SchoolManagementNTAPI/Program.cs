@@ -4,6 +4,8 @@ using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using SchoolManagementNTAPI.AppStartup;
 using SchoolManagementNTAPI.AppUser.IdentityErrorMessages;
+using SchoolManagementNTAPI.Authentication.Cookies;
+using SchoolManagementNTAPI.Authentication.JWT.Options;
 using SchoolManagementNTAPI.Data.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -67,6 +69,10 @@ builder.Services.AddDependencyInjectionServices();
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
+builder.Services.ConfigureOptions<JwtOptionsSetup>();
+builder.Services.ConfigureOptions<JwtBearerOptionsSetup>();
+builder.Services.ConfigureOptions<CookieOptionsSetup>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -77,6 +83,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
