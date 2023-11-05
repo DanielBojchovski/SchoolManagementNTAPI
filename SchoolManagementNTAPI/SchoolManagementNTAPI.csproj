@@ -30,6 +30,7 @@
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Data\SchoolManagementNTAPI.Data.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Principal\SchoolManagementNTAPI.Principal.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Professor\SchoolManagementNTAPI.Professor.csproj" />
+	  <ProjectReference Include="..\SchoolManagementNTAPI.Role\SchoolManagementNTAPI.Role.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.School\SchoolManagementNTAPI.School.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Student\SchoolManagementNTAPI.Student.csproj" />
 	  <ProjectReference Include="..\SchoolManagementNTAPI.Subject\SchoolManagementNTAPI.Subject.csproj" />
