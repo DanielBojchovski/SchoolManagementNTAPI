@@ -2,11 +2,12 @@
 #nullable disable
 using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace SchoolManagementNTAPI.Data.Entities;
 
-public partial class SchoolManagementNTDBContext : DbContext
+public partial class SchoolManagementNTDBContext : IdentityDbContext
 {
     public SchoolManagementNTDBContext(DbContextOptions<SchoolManagementNTDBContext> options)
         : base(options)
