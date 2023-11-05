@@ -12,4 +12,19 @@
     <ProjectReference Include="..\SchoolManagementNTAPI.Role\SchoolManagementNTAPI.Role.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="IdentityErrorMessages\LocalizedIdentityErrorMessages.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>LocalizedIdentityErrorMessages.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="IdentityErrorMessages\LocalizedIdentityErrorMessages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>LocalizedIdentityErrorMessages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
 </Project>
