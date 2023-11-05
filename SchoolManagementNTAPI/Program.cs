@@ -10,6 +10,7 @@ using SchoolManagementNTAPI.Authentication.Claims;
 using SchoolManagementNTAPI.Authentication.Cookies;
 using SchoolManagementNTAPI.Authentication.JWT.Options;
 using SchoolManagementNTAPI.Data.Entities;
+using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -108,6 +109,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("DanielDevCors");
+
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
 app.UseHttpsRedirection();
 
