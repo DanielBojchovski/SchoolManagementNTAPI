@@ -6,4 +6,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SchoolManagementNTAPI.Authentication\SchoolManagementNTAPI.Authentication.csproj" />
+    <ProjectReference Include="..\SchoolManagementNTAPI.Common\SchoolManagementNTAPI.Common.csproj" />
+    <ProjectReference Include="..\SchoolManagementNTAPI.Role\SchoolManagementNTAPI.Role.csproj" />
+  </ItemGroup>
+
 </Project>

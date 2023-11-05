@@ -1,4 +1,6 @@
-﻿using SchoolManagementNTAPI.Principal.Interfaces;
+﻿using SchoolManagementNTAPI.AppUser.Interfaces;
+using SchoolManagementNTAPI.AppUser.Services;
+using SchoolManagementNTAPI.Principal.Interfaces;
 using SchoolManagementNTAPI.Principal.Services;
 using SchoolManagementNTAPI.Professor.Interfaces;
 using SchoolManagementNTAPI.Professor.Services;
@@ -29,6 +31,8 @@ namespace SchoolManagementNTAPI.AppStartup
 
 
             services.AddScoped<IRolesService, RolesService>();
+
+            services.AddScoped<IUserService, UserService>();
 
             return services;
         }
