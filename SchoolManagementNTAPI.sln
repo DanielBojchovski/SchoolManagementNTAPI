@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.Authe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.Role", "SchoolManagementNTAPI.Role\SchoolManagementNTAPI.Role.csproj", "{ACC86C8A-DE5A-4B86-9719-F12A1A941DB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.AppUser", "SchoolManagementNTAPI.AppUser\SchoolManagementNTAPI.AppUser.csproj", "{1FBE8005-5D5A-4F05-89D5-7F44BE5364E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SchoolManagementNTAPI.AppUser", "SchoolManagementNTAPI.AppUser\SchoolManagementNTAPI.AppUser.csproj", "{1FBE8005-5D5A-4F05-89D5-7F44BE5364E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolManagementNTAPI.Notification", "SchoolManagementNTAPI.Notification\SchoolManagementNTAPI.Notification.csproj", "{8EA2CDBE-56C9-4461-AFDE-74D0AEA0FB05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{1FBE8005-5D5A-4F05-89D5-7F44BE5364E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FBE8005-5D5A-4F05-89D5-7F44BE5364E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FBE8005-5D5A-4F05-89D5-7F44BE5364E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EA2CDBE-56C9-4461-AFDE-74D0AEA0FB05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EA2CDBE-56C9-4461-AFDE-74D0AEA0FB05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EA2CDBE-56C9-4461-AFDE-74D0AEA0FB05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EA2CDBE-56C9-4461-AFDE-74D0AEA0FB05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
